@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^4.11.0",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "multer": "^1.4.5-lts.1",
+    "react-icons": "^5.0.1"
+  },
+  "devDependencies": {
+    "prisma": "^4.11.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "prisma": "prisma",
+    "migrate": "prisma migrate dev --name init"
+  },
+  "description": "- lakukan installasi dependencies - pastikan memiliki docker - pastikan memiliki docker-compose - jalankan perintah `docker-compose up -d` - install dependencies dengan perintah `yarn install` - lakukan migrasi database dengan perintah `yarn migrate` - jalankan perintah `yarn prisma generate` - jalankan perintah `yarn start` - untuk mengambil file dari upload, maka dapat diakses dengan `http://localhost:8000/uploads/{nama_file}`",
+  "keywords": [],
+  "author": ""
+}
